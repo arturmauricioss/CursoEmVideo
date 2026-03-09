@@ -11,16 +11,21 @@
         <h1 id="titulo">Tabuada</h1>
     </header>
     <main>
-        
-        <div>    
-            <label for="gerar">Gerar Tabuada:</label>
-            <input type="number" id="gerar">
-        </div>
-        <div>
-            <button>Gerar</button>
-        </div>
-        <select name="tabuada_completa" id="tabuada_completa"></select>
-        
+        <section>
+            <div>    
+                <label for="inserir_numero">Gerar Tabuada</label>
+            </div>
+            <div>                
+                <input type="number" id="inserir_numero">
+            </div>
+
+            <div>
+                <button onclick="gerar_tabuada()">Gerar</button>
+            </div>
+        </section>
+        <aside>
+            <select name="tabuada_completa" size="10"id="tabuada_completa"></select>
+        </aside>
     </main>
     <footer>
         &copy;Avallong
