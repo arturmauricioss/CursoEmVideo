@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // var nome = window.prompt('Qual o seu nome?')
+        // window.alert(`Seu nome tem ${nome.length} caracteres`)
+        // document.write(`Contando aqui, seu nome tem ${nome.length} letras<br>`)
+        // document.write(`Gosto bastante de como fica em maiusculo ${nome.toUpperCase()}<br>`)
+
+
+        var salario = 1985.3
+        document.write(salario                                                              +'<br>')
+        document.write(salario.toFixed(2)                                                   +'<br>')
+        document.write(salario.toFixed(2).replace('.',',')                                  +'<br>')
+        document.write(salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})+'<br>')
+        document.write(salario.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})+'<br>')
+        document.write(salario.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})+'<br>')
+        
+    </script>
+</body>
+</html>

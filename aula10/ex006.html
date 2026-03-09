@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja
+    </div>
+    <script>
+        var area = document.getElementById('area');
+        function clicar(){
+            area.innerText='clicastes';
+            area.style.backgroundColor='red';
+        }
+        function entrar(){
+            area.innerText='entrou';
+        }
+        function sair(){
+            area.innerHTML='saiu';
+            area.style.backgroundColor = 'green';
+        }
+    </script> -->
+
+
+    <!-- MESMA COISA SO QUE MAIS ORGANIZADO -->
+    <div id="area">
+        Interaja
+    </div>
+    <script>
+        var area = document.getElementById('area');
+        area.addEventListener('click', clicar);
+        area.addEventListener('mouseenter', entrar);
+        area.addEventListener('mouseout',sair);
+
+        function clicar(){
+            area.innerText='clicastes';
+            area.style.backgroundColor='red';
+        }
+        function entrar(){
+            area.innerText='entrou';
+        }
+        function sair(){
+            area.innerHTML='saiu';
+            area.style.backgroundColor = 'green';
+        }
+    </script>
+
+</body>
+</html>

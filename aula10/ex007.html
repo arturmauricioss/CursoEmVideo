@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="n1" id="n1">
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="resultado">R</div>
+
+    <script>
+        function somar(){
+
+            // talvez automatizar a quantidade de texto-> const byId = (id) => document.getElementById(id);
+
+            var n1_string = document.getElementById('n1');
+            var n2_string = document.getElementById('n2');
+            var resultado = document.getElementById('resultado');
+
+            var n1_number = Number(n1_string.value);
+            var n2_number = Number(n2_string.value);
+            var s = n1_number + n2_number;
+            resultado.innerHTML = `A soma de ${n1_number} e ${n2_number} é igual a ${s}`;
+        }        
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>De onde você é?</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <button onclick="rodar()"></button>
+    <div id="res"></div>
+    <script>
+        function rodar(){
+            var pais = document.querySelector('input#txtpais')
+            var res = document.querySelector('div#res')
+
+            if(pais.value!='Brasil'){
+                res.innerHTML = `<p>Nossa! Que leval você ser do ${pais.value}</p>`
+            }
+            else{
+                res.innerHTML = `<p>Legal! Então você é Brasileiro!</p>`
+            }
+            res.innerHTML += `<p>Prazer em te conhecer!</p>`
+        }
+    </script>
+</body>
+</html>

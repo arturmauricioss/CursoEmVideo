@@ -1,0 +1,1 @@
+// alguns simples de condicionais
