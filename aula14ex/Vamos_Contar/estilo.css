@@ -49,3 +49,10 @@ button{
     border: none;
     border-radius: 8px;
 }
+#res{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    flex-wrap: wrap;
+}
