@@ -6,10 +6,14 @@ function contar(){
     let fini = Number(fim.value)
     let passo = document.querySelector("#passo")
     let passi = Number(passo.value)
-
+    res.innerHTML =""
+    if (ini===""){
+        ini= 0
+    }
     if(ini==fini){
         let span = document.createElement('span')
         span.innerHTML = `&nbsp ${ini}`
+        res.appendChild(span)
     }
     else if (ini<fini){
     for (let index = ini; index <= fini; index += passi) {
@@ -18,19 +22,19 @@ function contar(){
         
         let sum = index+passi
         if(sum<=fini){
-            span.innerHTML += "->"
+            span.innerHTML += " ->"
         }
         res.appendChild(span)
     }
     }
     else if (fini<ini){
-    for (let index = fini; index >= ini; index -= passi) {
+    for (let index = ini; index >= fini; index -= passi) {
         let span = document.createElement('span')
         span.innerHTML = `&nbsp ${index}`
         
         let sum = index-passi
-        if(sum>=ini){
-            span.innerHTML += "->"
+        if(sum>=fini){
+            span.innerHTML += " ->"
         }
         res.appendChild(span)
     }
