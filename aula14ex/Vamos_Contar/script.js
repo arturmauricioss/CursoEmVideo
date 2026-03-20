@@ -6,10 +6,19 @@ function contar(){
     let fini = Number(fim.value)
     let passo = document.querySelector("#passo")
     let passi = Number(passo.value)
-    res.innerHTML =""
-    if (ini===""){
-        ini= 0
+
+    if (inicio.value===""){
+        inicio.value=0
     }
+    if (fim.value===""){
+        fim.value=0
+    }
+    if (passo.value === "") {
+        passo.value = 1
+    }
+
+    res.innerHTML =""
+
     if(ini==fini){
         let span = document.createElement('span')
         span.innerHTML = `&nbsp ${ini}`
