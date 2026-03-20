@@ -3,8 +3,6 @@ let inicio = document.querySelector("#inicio")
 let fim = document.querySelector("#fim")
 let passo = document.querySelector("#passo")
 
-
-
 function contar(){
     inicio.value = inicio.value || 0
     fim.value = fim.value || 0
@@ -19,7 +17,7 @@ function contar(){
         let span = document.createElement('span')
         span.innerHTML = `&nbsp ${index}`
         if (resu===true){
-            span.innerHTML += "->"
+            span.innerHTML += " ->"
         }
         res.appendChild(span)
     }
@@ -29,10 +27,10 @@ function contar(){
     }
 
     else if (ini<fini){
-    for (let index = ini; index <= fini; index += passi) {
-        let resu = index+passi<=fini
-        spamer(index,resu)
-    }
+        for (let index = ini; index <= fini; index += passi) {
+            let resu = index+passi<=fini
+            spamer(index,resu)
+        }
     }
     else if (fini<ini){
         for (let index = ini; index >= fini; index -= passi) {
