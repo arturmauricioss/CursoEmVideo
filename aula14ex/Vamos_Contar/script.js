@@ -30,13 +30,13 @@ function contar(){
 
     else if (ini<fini){
     for (let index = ini; index <= fini; index += passi) {
-        let resu = index<fini-(passi/2)
+        let resu = index+passi<=fini
         spamer(index,resu)
     }
     }
     else if (fini<ini){
         for (let index = ini; index >= fini; index -= passi) {
-            let resu = index>fini+(passi/2)
+            let resu = index-passi>=fini
             spamer(index,resu)
         }
     }
