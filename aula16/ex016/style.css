@@ -8,20 +8,22 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
     background-color: rgb(19, 19, 36);
     font-family: sans-serif;
 
 }
 
 main{
-
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width:680px;
+    max-width:720px;
     margin: 48px auto 0;
     box-shadow: 2px 2px 2px 2px rgb(135, 135, 192);
+    border-radius: 16px;
 }
 header{
     margin-top: 48px;
