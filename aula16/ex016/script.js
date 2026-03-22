@@ -41,7 +41,7 @@ function calcular(){
     let resultado = 0
     for (var i = 0; i<lista.length; i++){
         
-        valor = lista[i]
+        let valor = lista[i]
         resultado += valor
     }
    
