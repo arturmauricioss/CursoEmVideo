@@ -32,6 +32,7 @@ function adicionar(){
         }
 
         input.value = ""
+        input.focus()
     }
 }
 
@@ -40,9 +41,7 @@ function calcular(){
     res.innerHTML=`<p>Ao todo temos ${lista.length} números na lista</p>`
     let resultado = 0
     for (var i = 0; i<lista.length; i++){
-        
-        let valor = lista[i]
-        resultado += valor
+        resultado += lista[i]
     }
    
     res.innerHTML+=`<p>A soma é ${resultado}</p>`
